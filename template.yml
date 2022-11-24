@@ -17,7 +17,7 @@ Parameters:
   EmailAddress:
     Description: Email address used for SNS notification whenever people are found in image/video
     Type: String
-    Default: risekusu@gmail.com
+    Default: nidhi.sharma.csit.2019@miet.ac.in
   UploadImageBucket:
     Type: String
     Description: This bucket is for image upload
