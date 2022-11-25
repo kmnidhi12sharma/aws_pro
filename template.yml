@@ -29,7 +29,7 @@ Parameters:
   KinesisLambdaCodeBucket:
     Type: String
     Description: This bucket is to upload the lambda zip for capturing Kinesis data stream events
-    Default: kinesislambdabucket
+    Default: kinesislambdabucke
 
 Globals:
   Function:
