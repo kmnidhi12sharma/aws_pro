@@ -62,7 +62,8 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       Handler: app.lambda_handler
-      CodeUri: s3://uploadimag/my_sec_key
+      CodeUri: s3://uploadimage/app.py
+
       Runtime: python3.8
       Timeout: 60
       Events:
@@ -93,7 +94,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       Handler: app.lambda_handler
-      CodeUri: s3://searchimag/my_sec_key
+      CodeUri: s3://searchimag/app.py
       Runtime: python3.8
       Timeout: 60
       Events:
