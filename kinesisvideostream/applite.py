@@ -11,7 +11,7 @@ logger = logging.getLogger()
 logger.setLevel(LOG_LEVEL)
 sns=boto3.client('sns')
 sns_topic = os.environ['SnsTopic']
-region = os.environ['AWS_REGION'] 
+region = os.environ['us-east-1'] 
 
 def lambda_handler(event, context):
     unmatchcounter=0

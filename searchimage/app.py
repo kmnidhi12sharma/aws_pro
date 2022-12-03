@@ -4,7 +4,7 @@ import logging
 import json
 
 
-BUCKET = os.environ['BUCKETNAME']
+BUCKET = os.environ['uploadimagekusu']
 COLLECTION_ID = os.environ['REKOGNITIONCOLLECTION']
 FACE_MATCH_THRESHOLD = int(os.environ['REKOGNITIONFACEMATCHTHRESHOLD'])
 LOG_LEVEL = logging.DEBUG
@@ -13,7 +13,7 @@ LOG_LEVEL = logging.DEBUG
 s3 = boto3.client('s3')
 sns=boto3.client('sns')
 rekognition = boto3.client('rekognition')
-region = os.environ['AWS_REGION'] 
+region = os.environ['us-east-1'] 
 missing_person_table = os.environ['PersonData']
 sns_topic = os.environ['SnsTopic']
 dynamodb = boto3.client('dynamodb',region)
